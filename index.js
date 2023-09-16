@@ -43,9 +43,14 @@ var templateParams = {
  
 emailjs.send('service_yske6th', 'template_vv25ztr', templateParams)
     .then(function(response) {
-       console.log('SUCCESS!', response.status, response.text);
+        if(response.status==200){
+            alert('enquiry send successfully')
+            // console.log('SUCCESS!', response.status, response.text);
+        }
+      
     }, function(error) {
-       console.log('FAILED...', error);
+        alert('"sorry server error occured" please mail to svnhydraulics@gmail.com')
+    //    console.log('FAILED...', error);
     });
 console.log(templateParams);
 form.reset();
