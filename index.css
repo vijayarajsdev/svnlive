@@ -1,8 +1,9 @@
 *{padding: 0;
-margin: 0;}
-
+margin: 0;
+overflow-x: hidden;}
+/*----------------- css for navbar---------------*/
 .NavBar{
-    width: 100vw;
+    width: 99%;
     background-color: black;
     color: aliceblue;
     display: flex;
@@ -41,7 +42,7 @@ margin: 0;}
  text-decoration: underline;   
 }
 .HeaderImg{
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     
 }
@@ -59,9 +60,7 @@ margin: 0;}
 h3{
     font-family: 'Poppins', sans-serif;
 }
-.enquiry-heading{
-    color: aliceblue;
-}
+
 .productheading{
     text-align: center;
     background-color: blue;
@@ -89,53 +88,94 @@ display: flex;
     height: 20vh;
     border-radius: 5px 5px;
 }
+/*---------------------css for enquiry form--------------------*/
+#form{
+    background-color: rgb(225, 225, 237);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: blue;
+    font-size: large;
+
+}
+.requiredp{
+    color: red;
+    font-size: 10px;
+}
+.enquiry{
+    color: rgb(106, 3, 140);
+    margin-top: 2vh;
+}
+.label-container{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    margin-bottom: 2vh;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.label-container label{
+    font-weight: bold;
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+}
+.label-container input{
+    width: 50vw;
+    height: 6vh;
+    border-width: 2px;
+    border-radius: 5px;
+    border-color: red;
+    
+}
+.label-container input:focus{
+    border-color: rgb(0, 255, 21);
+    border-width: 3px;
+}
+.label-container textarea{
+    width: 50vw;
+    height: 10vh;
+    border-radius: 5px;
+    border-color: red;
+    
+}
+.label-container textarea:focus{
+    border-color: rgb(0, 255, 21);
+    border-width: 3px;
+}
+.formbtn{
+width: 20vw;
+height: 4vh;
+background-color: blue;
+color: aliceblue;
+font-weight: bold;
+border-radius: 5px;
+margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+/*---------------css for footer ------------------*/
 .Footerdiv{
     background-color: black;
     color: aliceblue;
     text-align: center;
 }
 
-#contactus{
-    width: 100vw;
-}
 
-.lab-in{
-    display: flex;
-    width: 50vw;
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 2vh 25vw 1vh 25vw;
-    padding-top: 2vh;
-    font-weight: bold;
-}
-.lab-in button{
-    background-color: blue;
-    color: aliceblue;
-    padding: 10px 20px;
-    border-radius: 5px 5px;
-    width: 100%;
-}
-.lab-in input{
-    border-radius: 5px;
-    padding: 5px;
-    width: 100%;
-    height: 5vh;
-}
-.lab-in input :focus{
-    background-color: black;
-}
-.lab-in textarea{
-    width: 100%;
-    height: 10vh;
-}
 
-#formclass{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: aqua;
-    height: 100%;
-}
+
+
+
 @media only screen and (max-width:400px) {
     *::-webkit-scrollbar{
         display: none;
@@ -201,6 +241,26 @@ display: flex;
         height: 20vh;
         border-radius: 5px 5px;
         
+    }
+    .label-container input{
+        
+        height: 4vh;
+        
+        
+    }
+    .label-container input:focus{
+        
+        border-width: 3px;
+    }
+    .label-container textarea{
+       
+        height: 10vh;
+        
+        
+    }
+    .label-container textarea:focus{
+        
+        border-width: 3px;
     }
     .Footerdiv{
         margin-top: 0vw;
