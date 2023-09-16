@@ -1,0 +1,209 @@
+*{padding: 0;
+margin: 0;}
+
+.NavBar{
+    width: 100vw;
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1000;
+    padding: 2vh;
+}
+#Navlist{
+    display: none;
+}
+.NavLeft li{
+    list-style: none;
+}
+.NavLeft li a{
+    text-decoration: none;
+}
+.NavRight{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.NavRight li{
+    margin: 0 5vw;
+    list-style: none;
+}
+.Link{
+    text-decoration: none;
+    color: aliceblue;
+}
+.Link:hover{
+    color: blue;
+}
+.Link:active{
+ text-decoration: underline;   
+}
+.HeaderImg{
+    width: 100vw;
+    height: 100vh;
+    
+}
+.HeaderName{
+    position: absolute;
+    top: 30%;
+    mix-blend-mode:screen;
+}
+.HeaderName h1{
+    color: aliceblue;
+    width: 100vw;
+    font-size: 7vw;
+    text-align: center;
+}
+h3{
+    font-family: 'Poppins', sans-serif;
+}
+.enquiry-heading{
+    color: aliceblue;
+}
+.productheading{
+    text-align: center;
+    background-color: blue;
+    color: aliceblue;
+    font-size: x-large;
+}
+
+
+.Product-container{
+    height: auto;
+}
+.Child-container{
+display: flex;
+}
+.Product-child{
+    width: 30vw;
+    padding-top: 30px;
+    text-align: center;
+}
+.Product-child:hover{
+    background-color: yellow;
+}
+.Product-child img{
+    width: 15vw;
+    height: 20vh;
+    border-radius: 5px 5px;
+}
+.Footerdiv{
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+}
+
+#contactus{
+    width: 100vw;
+}
+
+.lab-in{
+    display: flex;
+    width: 50vw;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 2vh 25vw 1vh 25vw;
+    padding-top: 2vh;
+    font-weight: bold;
+}
+.lab-in button{
+    background-color: blue;
+    color: aliceblue;
+    padding: 10px 20px;
+    border-radius: 5px 5px;
+    width: 100%;
+}
+.lab-in input{
+    border-radius: 5px;
+    padding: 5px;
+    width: 100%;
+    height: 5vh;
+}
+.lab-in input :focus{
+    background-color: black;
+}
+.lab-in textarea{
+    width: 100%;
+    height: 10vh;
+}
+
+#formclass{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: aqua;
+    height: 100%;
+}
+@media only screen and (max-width:400px) {
+    *::-webkit-scrollbar{
+        display: none;
+    }
+    #Navlist{
+        display: none;
+        position: absolute;
+        top: 0;
+        height: 100vh;
+        width: 50vw;
+        z-index: 1000;
+        background-color: red;
+        position: fixed;
+    }
+    #closenav{
+        margin-left: 90%;
+    }
+    .Mobilenav{
+        color: aliceblue;
+    }
+    .Mobilenavheader{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    .Mobilenavheader li{
+        list-style: none;
+        color: black;
+    }
+    .Mobilenavheader li button{
+        list-style: none;
+        color: black;
+        background-color: blue;
+        padding:0 3px;
+    }
+    .NavBar{
+        display: none;
+        background-color: black;
+    }
+    .HeaderImg{
+        height: 30vh;
+    }
+    .HeaderName{
+        top:15%;
+        
+    }
+    
+    .Child-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: blue;
+        width: 100%;
+        }
+    .Product-child{
+        width: 100vw;
+        text-align: center;
+        color: aliceblue;
+        width: 100%;
+    }
+    .Product-child img{
+        width: 40vw;
+        height: 20vh;
+        border-radius: 5px 5px;
+        
+    }
+    .Footerdiv{
+        margin-top: 0vw;
+    }
+    
+}
